@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SKPortfolio", "SKPortfolio\SKPortfolio.csproj", "{89067FD6-9285-456F-A1CE-2F982B32D10B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishScripts", "PublishScripts", "{CE0D08DD-5A1B-4C85-A443-40B4D5E86B1E}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\AzureWebsitePublishModule.psm1 = PublishScripts\AzureWebsitePublishModule.psm1
+		PublishScripts\Publish-WebApplicationWebsite.ps1 = PublishScripts\Publish-WebApplicationWebsite.ps1
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configurations", "Configurations", "{5D2CD9C3-B5ED-4A1B-8AD9-A936403FB432}"
+	ProjectSection(SolutionItems) = preProject
+		PublishScripts\Configurations\SKPortfolio-WAWS-dev.json = PublishScripts\Configurations\SKPortfolio-WAWS-dev.json
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{89067FD6-9285-456F-A1CE-2F982B32D10B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89067FD6-9285-456F-A1CE-2F982B32D10B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89067FD6-9285-456F-A1CE-2F982B32D10B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89067FD6-9285-456F-A1CE-2F982B32D10B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5D2CD9C3-B5ED-4A1B-8AD9-A936403FB432} = {CE0D08DD-5A1B-4C85-A443-40B4D5E86B1E}
+	EndGlobalSection
+EndGlobal
