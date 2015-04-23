@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = "TabPanels";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/tab-panel.css" />
+
+<h2>Tab Panels</h2>
+
+<ul class="tab-list">
+    <li class="active"><a class="tab-control" href="#tab-1">Tab 1</a></li>
+    <li><a class="tab-control" href="#tab-2">Tab 2</a></li>
+    <li><a class="tab-control" href="#tab-3">Tab 3</a></li>
+</ul>
+
+<div class="tab-panel active" id="tab-1">Content 1...
+    <img alt="Sean in a mirror" src="~/Images/sean_mirror_mirror.jpg" title="Mirror Mirror on the wall..." />
+</div>
+<div class="tab-panel" id="tab-2">
+    <img alt="Sean in Lysistrata" src="~/Images/sean_lysistrata.jpg" title="Alright, guys. Does anyone have clothes?" />Content 2...
+</div>
+<div class="tab-panel" id="tab-3">
+    <img alt="Sean in the past" src="~/Images/sean1920s.jpg" title="P.I.M.P." />
+    Content 3...
+</div>
+
+@section scripts {
+    <script src="~/Scripts/tab-panel.js"></script>
+}

@@ -1,0 +1,26 @@
+﻿@{
+    ViewBag.Title = "Accordion";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/accordion.css" />
+
+<h2>Accordion Demo</h2>
+
+<ul class="accordion">
+    <li>
+        <button class="accordion-control">The Man</button>
+        <div class="accordion-panel">Sean's the frickin man. But he's not, like, <em>THE MAN</em>. He's just a frickin awesome person.</div>
+    </li>
+    <li>
+        <button class="accordion-control">The Myth</button>
+        <div class="accordion-panel">It is said that he was born with 11 heads and a thousand eyes. His breath was fire. And his full head of hair swaddled him like a thick coat of fur.</div>
+    </li>
+    <li>
+        <button class="accordion-control">The Legend</button>
+        <div class="accordion-panel">He's legen...wait for it...wait for it...dary!</div>
+    </li>
+</ul>
+
+@section scripts{
+    <script src="~/Scripts/accordion.js"></script>
+}

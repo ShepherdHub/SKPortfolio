@@ -1,6 +1,9 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background: black;
+    color: orange;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -16,9 +19,16 @@
     white-space: normal;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+a {
+    color: orange;
+}
+
+a:hover,
+a:focus,
+a:visited {
+    color: darkorange;
+}
+
+ul {
+    list-style: none;
 }

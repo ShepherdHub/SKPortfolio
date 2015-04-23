@@ -1,0 +1,25 @@
+﻿.tab-list {
+    padding-left: 0;
+}
+
+.tab-list li {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid orange;
+}
+
+.tab-panel {
+    display: none;
+}
+
+.tab-panel.active {
+    display: block;
+    border: 1px solid orange;
+    padding: 10px 20px;
+    background-color: #111;
+}
+
+.tab-panel img {
+    display: block;
+    height: 300px;
+}
