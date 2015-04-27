@@ -29,7 +29,8 @@ namespace SKPortfolio
 
             bundles.Add(new StyleBundle("~/Content/css2").Include(
                       "~/Content/reset.css",
-                      "~/Content/site2.css"));
+                      "~/Content/site2.css",
+                      "~/Content/slider.css"));
         }
     }
 }

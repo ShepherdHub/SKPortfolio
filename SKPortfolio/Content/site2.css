@@ -1,12 +1,19 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Cinzel);
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 
 body {
     width: 960px;
     margin: auto;
-    background-color: #FAFAFA;
+    background-color: #F1F1F1;
+    font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif
 }
 
 .body-container {
+ }
+
+header {
+    margin: 20px 0 40px 0;
 }
 
 .title {
@@ -19,8 +26,32 @@ body {
     font-size: 1em;
 }
 
+nav {
+    margin-top: 50px;
+}
+
 nav li {
-    display: inline-block;
+    float: left;
+    width: 219px;
+    margin: 0 10px;
+    text-align: center;
+    font-family: 'Cinzel', serif;
+    border-right: 1px solid black;
+    font-weight: bold;
+}
+
+nav li:last-child {
+    border-right:none;
+}
+
+nav li a:hover,
+nav li a.active {
+    color: white;
+    background-color: black;
+}
+
+nav li a.active {
+
 }
 
 a {
@@ -28,14 +59,24 @@ a {
     text-decoration: none;
 }
 
-header {
-    margin: 20px 0;
-}
 
-header nav {
-    margin: 20px 0;
-}
 
 .main-content {
     background-color: white;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    padding: 10px 0;
+}
+
+/*h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    font-weight: bold;
+}*/
+
+
+
+/* Misc */
+.clearfix {
+    clear: both;
 }

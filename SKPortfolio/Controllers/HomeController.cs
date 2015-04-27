@@ -32,5 +32,20 @@ namespace SKPortfolio.Controllers
         {
             return View();
         }
+
+        public ActionResult Bio()
+        {
+            return View();
+        }
+
+        public ActionResult Resume()
+        {
+            return View();
+        }
+
+        public ActionResult Contact()
+        {
+            return View();
+        }
     }
 }

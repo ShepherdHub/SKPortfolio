@@ -3,23 +3,17 @@
     Layout = "~/Views/Shared/_Layout2.cshtml";
 }
 
-<h1>
-    Links to Demos
-</h1>
+<article role="slider">
+    <div class="slide-viewer">
+        <div class="slide-group">
+            <div class="slide slide-1"><img alt="slide show image" src="~/Images/Large/sean_stopkiss_cast_large.jpg" /></div>
+            <div class="slide slide-2"><img alt="slide show image" src="~/Images/Large/sean_lysistrata_large.jpg" /></div>
+            <div class="slide slide-3"><img alt="slide show image" src="~/Images/Large/sean_mirror_large.jpg" /></div>
+        </div>
+    </div>
+    <div class="slide-buttons"></div>
+</article>
 
-<div>
-    <ul>
-        <li>
-            <a href="/Home/Accordion">Accordion Demo</a>
-        </li>
-        <li>
-            <a href="/Home/TabPanels">Tab Demo</a>
-        </li>
-        <li>
-            <a href="/Home/ModalWindow">Popup "Modal" Demo</a>
-        </li>
-        <li>
-            <a href="/Home/Slider">Responsive Slider Demo</a>
-        </li>
-    </ul>
-</div>
+@section scripts {
+    <script src="~/Scripts/slider.js"></script>
+}
