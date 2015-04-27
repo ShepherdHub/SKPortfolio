@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Sean's Portfolio</title>
+    @Styles.Render("~/Content/css2")
+    @Scripts.Render("~/bundles/modernizr")
+
+</head>
+<body>
+    <div class="body-container">
+        <header>
+            <p class="title">
+                Sean Kimbro
+            </p>
+            <p class="title-sub">Artistic Direction. Design. Theatre.</p>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Productions</a></li> |
+                    <li><a href="#">Bio</a></li> |
+                    <li><a href="#">Resume</a></li> |
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <div class="main-content">
+            @RenderBody()
+        </div>
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - Sean's Portfolio!</p>
+        </footer>
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>
