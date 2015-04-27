@@ -1,12 +1,13 @@
 ﻿.picture-grid {
-    clear: both;
-    margin: auto;
-    overflow: auto;
+    float: right;
+    position: relative;
+    right: 50%;
 }
 
 .picture-container {
-    display: inline-block;
     float: left;
+    position: relative;
+    left: 50%;
     border: 1px solid orange;
     padding: 10px;
     margin: auto 20px;

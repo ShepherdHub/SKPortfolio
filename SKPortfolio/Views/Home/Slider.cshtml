@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewBag.Title = "Slider";
+}
+
+<link rel="stylesheet" type="text/css" href="~/Content/slider.css" />
+
+<h2>Slider</h2>
+<article role="slider">
+    <div class="slide-viewer">
+        <div class="slide-group">
+            <div class="slide slide-1"><img alt="slide show image" src="~/Images/Large/sean_stopkiss_cast_large.jpg" /></div>
+            <div class="slide slide-2"><img alt="slide show image" src="~/Images/Large/sean_lysistrata_large.jpg" /></div>
+            <div class="slide slide-3"><img alt="slide show image" src="~/Images/Large/sean_mirror_large.jpg" /></div>
+        </div>
+    </div>
+    <div class="slide-buttons"></div>
+</article>
+@section scripts {
+    <script src="~/Scripts/slider.js"></script>
+}

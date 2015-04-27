@@ -32,3 +32,8 @@ a:visited {
 ul {
     list-style: none;
 }
+
+
+.clear {
+    clear: both;
+}

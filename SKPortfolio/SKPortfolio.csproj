@@ -175,11 +175,15 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\modal.css" />
+    <Content Include="Content\slider.css" />
     <Content Include="Content\tab-panel.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Large\sean_lysistrata_large.jpg" />
+    <Content Include="Images\Large\sean_mirror_large.jpg" />
+    <Content Include="Images\Large\sean_stopkiss_cast_large.jpg" />
     <Content Include="Images\quixotic_logo_white_on_black.jpg" />
     <Content Include="Images\quixotic_theatre_banner_trees.jpg" />
     <Content Include="Images\sean1920s.jpg" />
@@ -203,6 +207,7 @@
     <Content Include="Scripts\modernizr-2.6.2.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\slider.js" />
     <Content Include="Scripts\tab-panel.js" />
     <Content Include="Scripts\_references.js" />
     <Content Include="Web.config" />
@@ -241,6 +246,7 @@
     <Content Include="Views\Home\Accordion.cshtml" />
     <Content Include="Views\Home\TabPanels.cshtml" />
     <Content Include="Views\Home\ModalWindow.cshtml" />
+    <Content Include="Views\Home\Slider.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

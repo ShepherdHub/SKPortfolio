@@ -27,5 +27,10 @@ namespace SKPortfolio.Controllers
         {
             return View();
         }
+
+        public ActionResult Slider()
+        {
+            return View();
+        }
     }
 }
