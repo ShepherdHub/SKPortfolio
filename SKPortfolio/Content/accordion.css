@@ -1,0 +1,27 @@
+﻿.accordion {
+    list-style:none;
+}
+
+.accordion li {
+    background-color: black;
+    border-color: white;
+    border-style: solid;
+    border-width: 0 1px;
+    border-top-width: 1px;
+}
+
+.accordion li:last-child {
+    border-bottom-width: 1px;
+}
+
+.accordion-control {
+    background-color:black;
+    color: white;
+    border: none;
+    font-size: 2em;
+}
+
+.accordion-panel {
+    display:none;
+    padding: 10px 20px;
+}

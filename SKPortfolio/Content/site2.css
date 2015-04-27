@@ -1,0 +1,41 @@
+﻿@import url(http://fonts.googleapis.com/css?family=Cinzel);
+
+body {
+    width: 960px;
+    margin: auto;
+    background-color: #FAFAFA;
+}
+
+.body-container {
+}
+
+.title {
+    font-family: 'Cinzel', serif;
+    font-size: 3em;
+}
+
+.title-sub {
+    font-family: 'Cinzel', serif;
+    font-size: 1em;
+}
+
+nav li {
+    display: inline-block;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    margin: 20px 0;
+}
+
+header nav {
+    margin: 20px 0;
+}
+
+.main-content {
+    background-color: white;
+}
