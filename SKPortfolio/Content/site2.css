@@ -1,5 +1,4 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Cinzel);
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
 @import url(http://fonts.googleapis.com/css?family=Roboto);
 
 body {
@@ -13,8 +12,10 @@ body {
     width: 100%;
  }
 
+/*Header*/
+
 header {
-    margin: 20px 0 40px 0;
+    margin: 40px 0 0 0;
 }
 
 .title {
@@ -33,33 +34,48 @@ nav {
 
 nav li {
     float: left;
-    width: 219px;
-    margin: 0 10px;
+    width: 240px;
+    height: 2em;
     text-align: center;
     font-family: 'Cinzel', serif;
-    border-right: 1px solid black;
     font-weight: bold;
+    background-color: #333;
 }
 
-nav li:last-child {
-    border-right:none;
-}
-
-nav li a:hover,
-nav li a.active {
+nav li a {
     color: white;
-    background-color: black;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 2em;
+    display: block;
 }
 
-a {
-    color: black;
-    text-decoration: none;
+.nav-1:hover,
+.nav-1.active {
+    background-color: indianred;
 }
+
+.nav-2:hover,
+.nav-2.active {
+    background-color: gold;
+}
+
+.nav-3:hover,
+.nav-3.active {
+    background-color: forestgreen;
+}
+.nav-4:hover,
+.nav-4.active {
+    background-color: royalblue;
+}
+
+/*Body and Generic*/
 
 .body-content {
     background-color: white;
     border: 1px solid lightgray;
-    border-radius: 3px;
     padding: 10px 0;
     width: 100%;
     line-height: 1.5;
@@ -78,6 +94,36 @@ h1 {
     margin: 10px 5px 20px 20px;
 }
 
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.main-content {
+    float: left;
+    width: 600px;
+    padding: 10px;
+    margin: auto 10px;
+}
+
+.side-bar {
+    float: left;
+    width: 280px;
+    min-height: 300px;
+    padding: 10px;
+    margin: auto 10px;
+    color: white;
+}
+
+.side-bar-bio {
+    background-color: gold;
+}
+
+.side-bar-contact {
+    background-color: royalblue;
+}
+
+/*Resume Page*/
 .download-link {
     margin: 10px;
     font-size: 1.5em;
@@ -100,23 +146,6 @@ object {
     display: block;
 }
 
-.main-content {
-    float: left;
-    width: 600px;
-    padding: 10px;
-    margin: auto 10px;
-}
-
-.side-bar {
-    float: left;
-    width: 280px;
-    min-height: 300px;
-    padding: 10px;
-    margin: auto 10px;
-    background-color: #DC0;
-    color: white;
-}
-
 .bio-pic {
     width: 300px;
     height: 300px;
@@ -125,6 +154,45 @@ object {
     float: left;
 }
 
+/*Form*/
+
+input, textarea {
+    font-family: 'Roboto', 'Arial Narrow', Arial, sans-serif;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 350px;
+    height: 1.5em;
+    padding: 3px 10px;
+    border-radius: 2px;
+}
+
+textarea {
+    width: 450px;
+    height: 200px;
+    padding: 3px 10px;
+    border-radius: 2px;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 50px;
+    height: 1.5em;
+    color: white;
+}
+
+.submit-contact {
+    background-color: royalblue;
+}
+
+form dt {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+form dd {
+    margin-bottom: 20px;
+}
 
 
 /* Misc */
