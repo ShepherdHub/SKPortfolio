@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "Resume";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h1>Resume</h1>
+
+<object data="~/Content/sample.pdf" type="application/pdf" width="100%" height="100%">
+
+    <p>
+        It appears you don't have a PDF plugin for this browser.
+        No biggie... you can <a href="~/Content/sample.pdf">
+            click here to
+            download the PDF file.
+        </a>
+    </p>
+
+</object>
+
+<a class="download-link" href="~/Content/sample.pdf" download="seanKimbroResume">Download PDF <img src="~/Images/Icons/pdf.png" /></a>
+<div class="clearfix"></div>

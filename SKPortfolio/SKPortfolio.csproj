@@ -183,6 +183,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Images\Icons\pdf.png" />
     <Content Include="Images\Large\sean_lysistrata_large.jpg" />
     <Content Include="Images\Large\sean_mirror_large.jpg" />
     <Content Include="Images\Large\sean_stopkiss_cast_large.jpg" />
@@ -195,6 +196,7 @@
     <Content Include="Scripts\accordion.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Content\sample.pdf" />
     <None Include="Properties\PublishProfiles\SKPortfolio.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -207,6 +209,7 @@
     <Content Include="Scripts\modal-init.js" />
     <Content Include="Scripts\modal-window.js" />
     <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Scripts\navbar.js" />
     <Content Include="Scripts\respond.js" />
     <Content Include="Scripts\respond.min.js" />
     <Content Include="Scripts\slider.js" />
@@ -250,6 +253,9 @@
     <Content Include="Views\Home\ModalWindow.cshtml" />
     <Content Include="Views\Home\Slider.cshtml" />
     <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Home\Resume.cshtml" />
+    <Content Include="Views\Home\Bio.cshtml" />
+    <Content Include="Views\Home\Contact.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
