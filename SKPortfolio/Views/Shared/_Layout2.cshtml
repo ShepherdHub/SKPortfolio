@@ -18,10 +18,38 @@
 
             <nav>
                 <ul>
-                    <li><a href="/Home/Index" class="active">Productions</a></li>
-                    <li><a href="/Home/Bio">Bio</a></li>
-                    <li><a href="/Home/Resume">Resume</a></li>
-                    <li><a href="/Home/Contact">Contact</a></li>
+                    @if (ViewBag.IsProductionsActive != null && ViewBag.IsProductionsActive)
+                    {
+                        <li><a href="/Home/Index" class="active">Productions</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/Home/Index">Productions</a></li>
+                    }
+                    @if (ViewBag.IsBioActive != null && ViewBag.IsBioActive)
+                    {
+                        <li><a href="/Home/Bio" class="active">Bio</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/Home/Bio">Bio</a></li>
+                    }
+                    @if (ViewBag.IsResumeActive != null && ViewBag.IsResumeActive)
+                    {
+                        <li><a href="/Home/Resume" class="active">Resume</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/Home/Resume">Resume</a></li>
+                    }
+                    @if (ViewBag.IsContactActive != null && ViewBag.IsContactActive)
+                    {
+                        <li><a href="/Home/Contact" class="active">Contact</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/Home/Contact">Contact</a></li>
+                    }
                 </ul>
                 <div class="clearfix"></div>
             </nav>

@@ -2,8 +2,37 @@
 @{
     ViewBag.Title = "Contact";
     Layout = "~/Views/Shared/_Layout2.cshtml";
+    ViewBag.IsContactActive = true;
 }
 
-<h1>Contact</h1>
+<h1>Contact Sean</h1>
 
-<p class="under-construction">UNDER CONSTRUCTION!!!</p>
+<article class="main-content">
+    <form>
+        <label>Your Name (Required)</label> <input type="text" name="name" /> <br />
+        <label>Your Email (Required)</label> <input type="email" name="email" /> <br />
+        <label>Subject</label> <input type="text" name="subject" /> <br />
+        <label>Message</label> <textarea name="message">Leave a message for Sean...
+        </textarea> <br />
+        <input type="submit" name="send" value="Send" />
+    </form>
+</article>
+<aside class="side-bar">
+    <section>
+        <p>
+            Email
+        </p>
+        <p>
+            fakeaddress@fakemail.com
+        </p>
+    </section>
+    <section>
+        <p>
+            Phone
+        </p>
+        <p>
+            (555) 555 - 5555
+        </p>
+    </section>
+</aside>
+<div class="clearfix"></div>
