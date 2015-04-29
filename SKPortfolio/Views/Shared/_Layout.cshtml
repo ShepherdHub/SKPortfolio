@@ -3,33 +3,63 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>@ViewBag.Title - Sean's Portfolio</title>
     @Styles.Render("~/Content/css")
+    <link rel="stylesheet" type="text/css" href="~/Content/site.css" />
     @Scripts.Render("~/bundles/modernizr")
 
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Sean's Test Portfolio", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                @*
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+    <div class="body-container">
+        <header>
+            <p class="title">
+                Sean Kimbro
+            </p>
+            <p class="title-sub">Artistic Direction. Design. Theatre.</p>
+
+            <nav>
+                <ul>
+                    @if (ViewBag.IsProductionsActive != null && ViewBag.IsProductionsActive)
+                    {
+                        <li><a href="/Home/Index" class="nav-1 active">Productions</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/Home/Index" class="nav-1">Productions</a></li>
+                    }
+                    @if (ViewBag.IsBioActive != null && ViewBag.IsBioActive)
+                    {
+                        <li><a href="/Home/Bio" class="nav-2 active">Bio</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/Home/Bio" class="nav-2">Bio</a></li>
+                    }
+                    @if (ViewBag.IsResumeActive != null && ViewBag.IsResumeActive)
+                    {
+                        <li><a href="/Home/Resume" class="nav-3 active">Resume</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/Home/Resume" class="nav-3">Resume</a></li>
+                    }
+                    @if (ViewBag.IsContactActive != null && ViewBag.IsContactActive)
+                    {
+                        <li><a href="/Home/Contact" class="nav-4 active">Contact</a></li>
+                    }
+                    else
+                    {
+                        <li><a href="/Home/Contact" class="nav-4">Contact</a></li>
+                    }
                 </ul>
-                @Html.Partial("_LoginPartial")*@
-            </div>
+                <div class="clearfix"></div>
+            </nav>
+            
+        </header>
+
+        <div class="body-content">
+            @RenderBody()
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
         <hr />
         <footer>
             <p>&copy; @DateTime.Now.Year - Sean's Portfolio!</p>
@@ -37,7 +67,6 @@
     </div>
 
     @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/bootstrap")
     @RenderSection("scripts", required: false)
 </body>
 </html>

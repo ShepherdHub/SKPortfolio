@@ -24,12 +24,8 @@ namespace SKPortfolio
                       "~/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
-                      "~/Content/bootstrap.css",
-                      "~/Content/site.css"));
-
-            bundles.Add(new StyleBundle("~/Content/css2").Include(
                       "~/Content/reset.css",
-                      "~/Content/site2.css",
+                      //"~/Content/site.css",   --Commented out because bundler doesn't like @import for fonts
                       "~/Content/slider.css"));
         }
     }

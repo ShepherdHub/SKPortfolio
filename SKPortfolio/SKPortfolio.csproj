@@ -175,14 +175,14 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\modal.css" />
+    <Content Include="Content\nav-card.css" />
     <Content Include="Content\reset.css" />
-    <Content Include="Content\site2.css" />
+    <Content Include="Content\site.css" />
     <Content Include="Content\slider.css" />
     <Content Include="Content\tab-panel.css" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Site.css" />
     <Content Include="Images\Icons\pdf.png" />
     <Content Include="Images\Large\sean_lysistrata_large.jpg" />
     <Content Include="Images\Large\sean_mirror_large.jpg" />
@@ -197,6 +197,9 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Content\sample.pdf" />
+    <None Include="Properties\PublishProfiles\SKPortfolio %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\SKPortfolio - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\SKPortfolio - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\SKPortfolio.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
@@ -224,7 +227,7 @@
     <Content Include="Views\Web.config" />
     <Content Include="Views\_ViewStart.cshtml" />
     <Content Include="Views\Shared\Error.cshtml" />
-    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Shared\_Layout.old.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
     <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
@@ -251,7 +254,7 @@
     <Content Include="Views\Home\TabPanels.cshtml" />
     <Content Include="Views\Home\ModalWindow.cshtml" />
     <Content Include="Views\Home\Slider.cshtml" />
-    <Content Include="Views\Shared\_Layout2.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Home\Resume.cshtml" />
     <Content Include="Views\Home\Bio.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
