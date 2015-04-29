@@ -26,6 +26,7 @@ namespace SKPortfolio
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/reset.css",
                       //"~/Content/site.css",   --Commented out because bundler doesn't like @import for fonts
+                      "~/Content/nav-card.css",
                       "~/Content/slider.css"));
         }
     }

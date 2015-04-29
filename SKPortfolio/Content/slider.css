@@ -35,10 +35,10 @@
 .slide-btn {
   border: none;
   background: none;
-  color: orange;
+  color: black;
   font-size: 200%;
   line-height: 0.5em;}
 
 .slide-btn.active, .slide-btn:hover {
-  color: orangered;
+  color: indianred;
   cursor: pointer;}
